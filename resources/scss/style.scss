@@ -1,0 +1,68 @@
+@import "./reset";
+@import "./variable.scss";
+@import "./extend";
+
+/* START HEADER SECTION */
+
+header {
+  .container {
+    background-color: $primary-color;
+    .header-container-wrapper {
+      width: 100%;
+      background-image: url("../img/backgorund.png");
+      height: 100vh;
+      .header {
+        padding-top: 60px;
+        max-width: 1240px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo-area {
+          a {
+            img {
+              width: 172px;
+              height: 56px;
+            }
+          }
+        }
+        nav {
+          ul {
+            li {
+              display: inline-block;
+              a {
+                display: block;
+                font-family: "Ubuntu";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                color: $light-color;
+                padding: 10px 30px;
+                text-transform: capitalize;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .btn-area {
+          .btn {
+            a {
+              padding: 10px 30px;
+              background-color: $btn-color;
+              border-radius: 5px;
+              color: $light-color;
+              font-family: "Ubuntu";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*END HEADER SECTION*/
