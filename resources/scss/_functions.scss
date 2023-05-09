@@ -1,30 +1,56 @@
-@function themeColor($variant) {
-  @if ($theme== "light") {
-    @if ($variant== "primary") {
-      @return $primary-color-light;
-    }
-    @if ($variant== "text") {
-      @return $text-color-light;
-    }
-    @if ($variant== "paragraph") {
-      @return $paragraph-color-light;
-    }
-    @if ($variant== "nav") {
-      @return $black-color;
-    }
-  }
-  @if ($theme== "dark") {
-    @if ($variant== "primary") {
-      @return $primary-color-dark;
-    }
-    @if ($variant== "text") {
-      @return $text-color-dark;
-    }
-    @if ($variant== "paragraph") {
-      @return $paragraph-color-dark;
-    }
-    @if ($variant== "nav") {
-      @return $white-color;
-    }
-  }
-}
+// @function themeColor($variant) {
+//   @if ($theme== "light") {
+//     @if ($variant== "primary") {
+//       @return $primary-color-light;
+//     }
+//     @if ($variant== "text") {
+//       @return $text-color-light;
+//     }
+//     @if ($variant== "paragraph") {
+//       @return $paragraph-color-light;
+//     }
+//     @if ($variant== "nav") {
+//       @return black;
+//     }
+//     @if ($variant== "logotext-1") {
+//       @return $logo-1-color-light;
+//     }
+//     @if ($variant== "logotext-2") {
+//       @return $logo-2-color-light;
+//     }
+//     @if ($variant== "nav-hover") {
+//       @return $highlight-color-light;
+//     }
+//     @if ($variant== "border") {
+//       @return $border-color-light;
+//     }
+//   }
+
+//   @if ($theme== "dark") {
+//     @if ($variant== "primary") {
+//       @return $primary-color-dark;
+//     }
+//     @if ($variant== "text") {
+//       @return $text-color-dark;
+//     }
+//     @if ($variant== "paragraph") {
+//       @return $paragraph-color-dark;
+//     }
+//     @if ($variant== "nav") {
+//       @return white;
+//     }
+//     @if ($variant== "logotext-1") {
+//       @return $logo-1-color-dark;
+//     }
+//     @if ($variant== "logotext-2") {
+//       @return $logo-2-color-dark;
+//     }
+//     @if ($variant== "nav-hover") {
+//       @return $highlight-color-dark;
+//     }
+//     @if ($variant== "border") {
+//       @return $border-color-dark;
+//     }
+//   }
+//   @return false;
+// }

@@ -1,0 +1,64 @@
+.container {
+  max-width: $container-size;
+  margin: 0 10%;
+}
+
+.toggle-container {
+  position: relative;
+}
+
+.theme-btn {
+  width: 3em;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.theme-btn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.theme-btn.light {
+  display: none;
+}
+
+.dark .theme-btn.dark {
+  display: none;
+}
+
+.dark .theme-btn.light {
+  display: block;
+}
+
+.highlighted {
+  color: $highlight-color;
+}
+.title-color {
+  color: $title-color;
+}
+.btn {
+  border: none;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 27px;
+}
+.btn-fill {
+  background-color: $highlight-color;
+  color: white;
+}
+.btn-bordered {
+  background-color: transparent;
+  border: 1px solid $highlight-color;
+  color: $highlight-color;
+}

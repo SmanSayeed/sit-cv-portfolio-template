@@ -12,16 +12,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="resources/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- choose one -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Start header section-->
     <header>
       <div class="container">
-        <div class="header-container-wrapper">
+        <div class="header-wrapper">
           <div class="header">
             <div class="logo-area">
               <a href="#">
-                <img src="resources/img/logo.png" alt="logo" />
+                <!-- <img src="resources/img/logo.png" alt="logo" /> -->
+                <span class="logotext-1">Chris</span>
+                <span class="logotext-2">Smith</span>
               </a>
             </div>
             <nav>
@@ -29,14 +44,73 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Career</a></li>
                 <li><a href="#">About us </a></li>
-                <li><a href="#">Tractic</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                  <div class="toggle-container">
+                    <button
+                      class="theme-btn light"
+                      onclick="setTheme('light')"
+                      title="Light mode"
+                    >
+                      <img
+                        src="https://assets.codepen.io/210284/sun.png"
+                        alt="sun"
+                      />
+                    </button>
+                    <button
+                      class="theme-btn dark"
+                      onclick="setTheme('dark')"
+                      title="Dark mode"
+                    >
+                      <img
+                        src="https://assets.codepen.io/210284/moon.png"
+                        alt="moon"
+                      />
+                    </button>
+                  </div>
+                </li>
               </ul>
             </nav>
-          
           </div>
         </div>
       </div>
     </header>
     <!-- ============== End header ============== -->
+
+    <!-- hero section  -->
+    <div class="container hero">
+      <div class="left">
+        <div class="text-highlighted-small">
+          I AM <span class="highlighted">Web Developer</span>
+        </div>
+
+        <div class="text-xl title-color">
+          Maximize Your Business
+          <span class="highlighted text-highlighted-large">Potential</span> with
+          Custom Web Development
+          <span class="highlighted text-highlighted-large">Solutions!</span>
+        </div>
+        <div class="text-sm">
+          Take your business to the next level with custom web development
+          solutions.
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-fill">Get in touch <i class="fa fa-arrow-right"></i> </button>
+          <button class="btn btn-bordered">Download CV </button>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./resources/img/hero.png" class="hero-img" alt="hero-img" />
+      </div>
+    </div>
+
+    <script>
+      // const day = true;
+      // const root = document.documentElement;
+      // root.style.setProperty("--theme", day ? "light" : "dark");
+      const setTheme = (theme) => (document.documentElement.className = theme);
+    </script>
   </body>
 </html>
