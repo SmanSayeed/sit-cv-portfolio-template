@@ -274,6 +274,7 @@ a {
 
 /* START HEADER SECTION */
 header {
+  overflow: hidden;
   border: 1px solid var(--border-color);
 }
 header .header-wrapper {
@@ -306,16 +307,67 @@ header .header-wrapper .header .logo-area a img {
   width: 172px;
   height: 56px;
 }
-header .header-wrapper .header nav ul {
+header .header-wrapper .header .nav {
+  display: none;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  header .header-wrapper .header .mobile-nav {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  header .header-wrapper .header .mobile-nav {
+    display: none;
+  }
+}
+header .header-wrapper .header .mobile-nav .mobile-nav-list {
+  display: none;
+  position: absolute;
+  z-index: 1111111;
+  background-color: var(--theme-color);
+  height: 100%;
+  overflow-x: hidden;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  padding-top: 5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  font-size: 2rem;
+}
+header .header-wrapper .header .mobile-nav .mobile-nav-list .cancel-menu {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: 1px solid var(--title-color);
+  padding: 10px;
+  border-radius: 12px;
+}
+header .header-wrapper .header .mobile-nav .mobile-nav-list li a {
+  color: var(--title-color);
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  header .header-wrapper .header .desktop-nav {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  header .header-wrapper .header .desktop-nav {
+    display: block;
+  }
+}
+header .header-wrapper .header .desktop-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
 }
-header .header-wrapper .header nav ul li {
+header .header-wrapper .header .desktop-nav ul li {
   display: inline-block;
 }
-header .header-wrapper .header nav ul li a {
+header .header-wrapper .header .desktop-nav ul li a {
   display: block;
   font-family: "Ubuntu";
   font-style: normal;
@@ -327,11 +379,11 @@ header .header-wrapper .header nav ul li a {
   text-transform: capitalize;
   text-decoration: none;
 }
-header .header-wrapper .header nav ul li a:hover {
+header .header-wrapper .header .desktop-nav ul li a:hover {
   color: var(--highlight-color);
   position: relative;
 }
-header .header-wrapper .header nav ul li a:hover:after {
+header .header-wrapper .header .desktop-nav ul li a:hover:after {
   content: "";
   height: 6px;
   background: var(--highlight-color);
@@ -350,6 +402,11 @@ header .header-wrapper .header nav ul li a:hover:after {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 300px) and (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+  }
+}
 .hero .left {
   padding: 10% 0;
   width: 60%;
@@ -360,14 +417,29 @@ header .header-wrapper .header nav ul li a:hover:after {
   color: var(--text-color);
   gap: 1rem;
 }
+@media (min-width: 300px) and (max-width: 767px) {
+  .hero .left {
+    order: 2;
+  }
+}
 .hero .left .btn-group {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+@media (min-width: 300px) and (max-width: 767px) {
+  .hero .left .btn-group {
+    flex-direction: column;
+  }
+}
 .hero .right {
   width: 40%;
+}
+@media (min-width: 300px) and (max-width: 767px) {
+  .hero .right {
+    order: 1;
+  }
 }
 .hero .right .hero-img {
   height: 98%;
