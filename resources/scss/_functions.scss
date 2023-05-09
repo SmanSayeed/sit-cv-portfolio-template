@@ -1,0 +1,30 @@
+@function themeColor($variant) {
+  @if ($theme== "light") {
+    @if ($variant== "primary") {
+      @return $primary-color-light;
+    }
+    @if ($variant== "text") {
+      @return $text-color-light;
+    }
+    @if ($variant== "paragraph") {
+      @return $paragraph-color-light;
+    }
+    @if ($variant== "nav") {
+      @return $black-color;
+    }
+  }
+  @if ($theme== "dark") {
+    @if ($variant== "primary") {
+      @return $primary-color-dark;
+    }
+    @if ($variant== "text") {
+      @return $text-color-dark;
+    }
+    @if ($variant== "paragraph") {
+      @return $paragraph-color-dark;
+    }
+    @if ($variant== "nav") {
+      @return $white-color;
+    }
+  }
+}

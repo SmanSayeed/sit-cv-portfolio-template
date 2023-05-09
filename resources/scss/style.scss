@@ -1,15 +1,18 @@
 @import "./reset";
-@import "./variable.scss";
+@import "./colors";
+@import "./variable";
 @import "./extend";
+@import "./mixins";
+@import "./functions";
 
 /* START HEADER SECTION */
-
+body {
+  background: themeColor("primary");
+}
 header {
   .container {
-    background-color: $primary-color;
     .header-container-wrapper {
       width: 100%;
-      background-image: url("../img/backgorund.png");
       height: 100vh;
       .header {
         padding-top: 60px;
@@ -37,26 +40,11 @@ header {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 18px;
-                color: $light-color;
+                color: themeColor("nav");
                 padding: 10px 30px;
                 text-transform: capitalize;
                 text-decoration: none;
               }
-            }
-          }
-        }
-        .btn-area {
-          .btn {
-            a {
-              padding: 10px 30px;
-              background-color: $btn-color;
-              border-radius: 5px;
-              color: $light-color;
-              font-family: "Ubuntu";
-              font-style: normal;
-              font-weight: 700;
-              font-size: 16px;
-              line-height: 18px;
             }
           }
         }

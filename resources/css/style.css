@@ -140,12 +140,12 @@ a {
 }
 
 /* START HEADER SECTION */
-header .container {
-  background-color: #181733;
+body {
+  background: #131320;
 }
+
 header .container .header-container-wrapper {
   width: 100%;
-  background-image: url("../img/backgorund.png");
   height: 100vh;
 }
 header .container .header-container-wrapper .header {
@@ -174,17 +174,6 @@ header .container .header-container-wrapper .header nav ul li a {
   padding: 10px 30px;
   text-transform: capitalize;
   text-decoration: none;
-}
-header .container .header-container-wrapper .header .btn-area .btn a {
-  padding: 10px 30px;
-  background-color: #df2020;
-  border-radius: 5px;
-  color: #fff;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
 }
 
 /*END HEADER SECTION*/
